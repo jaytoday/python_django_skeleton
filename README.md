@@ -20,7 +20,7 @@ Register a new app on https://singly.com/apps. If you are testing on your local 
 
 Edit the file /python_django_skeleton/webapp/settings.py to include the SINGLY_CLIENT_ID and SINGLY_CLIENT_SECRET that you got in the previous step.
 
-Set-up the database. In the root folder of the app, execute
+Set up the database. In the root folder of the app, execute
 
     python manage.py syncdb
 
