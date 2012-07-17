@@ -9,7 +9,7 @@ Getting Started
 ---------------
 Download the code. If you have git, clone the repo from the commandline
 
-    git clone https://github.com/blah
+    git clone https://github.com/Singly/python_django_skeleton.git
 
 Enter the directory and install the required python packages with pip (django, request):
 
