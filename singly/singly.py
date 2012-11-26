@@ -1,4 +1,7 @@
-import simplejson
+# Handles JSON across multiple Python versions
+try: import simplejson as json
+except ImportError: import json
+
 import requests
 from webapp import settings
 from webapp.settings import SINGLY_CLIENT_ID, SINGLY_CLIENT_SECRET, SINGLY_REDIRECT_URI
@@ -28,7 +31,7 @@ class Singly(object):
             raise ApiError("Unsupported protocol")
 
         if response.status_code == 200:
-            return simplejson.loads(response.content)
+            return json.loads(response.content)
         else:
             if settings.DEBUG:
                 raise ApiError("%s: %s" % (response.status_code, response.content))
